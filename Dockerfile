@@ -105,10 +105,6 @@ RUN set -x \
 RUN rm -r /usr/local/tomcat/webapps/* \
 	&& mkdir -p /usr/local/tomcat/conf/Catalina/localhost
 
-COPY logging.properties /usr/local/tomcat/conf/
-COPY server${tomcatmajorversion}.xml /usr/local/tomcat/conf/server.xml
-COPY context.xml /usr/local/tomcat/conf/
-
 RUN mkdir -p /usr/local/tomcat/conf/Catalina/localhost
 RUN mkdir -p /ep/conf
 RUN mkdir -p /ep/assets
