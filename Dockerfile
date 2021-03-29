@@ -71,7 +71,7 @@ RUN mkdir -p "$CATALINA_HOME"
 WORKDIR $CATALINA_HOME
 
 COPY /gpg-retry-download.sh /gpg-retry-download.sh
-RUN chmod 777 gpg-retry-download.sh
+RUN chmod 777 /gpg-retry-download.sh
 # see https://www.apache.org/dist/tomcat/tomcat-8/KEYS
 RUN /gpg-retry-download.sh \
 	05AB33110949707C93A279E3D3EFE6B686867BA6 \
