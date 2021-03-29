@@ -119,7 +119,7 @@ COPY canary-touch.sh /usr/local/tomcat/bin/
 COPY settings.xml /usr/local/tomcat/conf/
 COPY tomcat-users.xml /usr/local/tomcat/conf/
 COPY logging.properties /usr/local/tomcat/conf/
-COPY server${tomcatmajorversion}.xml /usr/local/tomcat/conf/server.xml
+COPY server9.xml /usr/local/tomcat/conf/server.xml
 COPY context.xml /usr/local/tomcat/conf/
 
 # install dependencies
